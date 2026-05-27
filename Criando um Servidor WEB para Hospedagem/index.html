@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando um Servidor WEB para Hospedagem</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-server"></i>
+                <span>ServidorWEB</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#sobre" class="nav-link">Sobre o Projeto</a>
+                <a href="#infraestrutura" class="nav-link">Infraestrutura</a>
+                <a href="#tecnologias" class="nav-link">Tecnologias</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section home-section">
+        <div class="home-background"></div>
+        <div class="home-content">
+            <h1 class="home-title">Criando um Servidor WEB para Hospedagem</h1>
+            <h2 class="home-subtitle">Meu Primeiro Servidor WEB</h2>
+            <p class="home-description">Projeto acadêmico da disciplina Server and Data Center Administration utilizando Windows Server, IIS e Hyper-V</p>
+            <a href="#sobre" class="btn btn-primary">
+                <i class="fas fa-arrow-right"></i> Ver Projeto
+            </a>
+            <div class="home-icons">
+                <div class="icon-box">
+                    <i class="fas fa-server"></i>
+                    <span>Servidor</span>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-cloud"></i>
+                    <span>Cloud</span>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Rede</span>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-database"></i>
+                    <span>Banco de Dados</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="status" class="section status-section">
+        <div class="container">
+            <h2 class="section-title">Status do Servidor</h2>
+            <div class="status-grid">
+                <div class="status-card">
+                <div class="status-indicator online"></div>
+                <i class="fas fa-server"></i>
+                <h3>Servidor Online</h3>
+                <p>Windows Server 2022</p>
+                </div>
+                <div class="status-card">
+                <div class="status-indicator online"></div>
+                <i class="fas fa-globe"></i>
+                <h3>IIS Ativo</h3>
+                <p>Internet Information Services</p>
+                </div>
+                <div class="status-card">
+                <div class="status-indicator online"></div>
+                <i class="fas fa-database"></i>
+                <h3>Banco de Dados Conectado</h3>
+                <p>MySQL Server</p>
+                </div>
+                <div class="status-card">
+                <div class="status-indicator online"></div>
+                <i class="fas fa-lock"></i>
+                <h3>SSL Ativado</h3>
+                <p>Segurança HTTPS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <div class="sobre-grid">
+                <div class="sobre-card">
+                    <i class="fas fa-server"></i>
+                    <h3>O que é um Servidor Web?</h3>
+                    <p>Um servidor web é um software e hardware que usa HTTP (Hypertext Transfer Protocol) e outros protocolos para responder a solicitações de clientes feitas pela World Wide Web.</p>
+                </div>
+                <div class="sobre-card">
+                    <i class="fab fa-windows"></i>
+                    <h3>O que é IIS?</h3>
+                    <p>O Internet Information Services (IIS) é um servidor web flexível, seguro e gerenciável da Microsoft para uso com o Windows NT.</p>
+                </div>
+                <div class="sobre-card">
+                    <i class="fab fa-microsoft"></i>
+                    <h3>O que é Windows Server?</h3>
+                    <p>Windows Server é um sistema operacional de servidor da Microsoft, projetado para compartilhamento de serviços de dados, aplicativos e recursos de rede.</p>
+                </div>
+                <div class="sobre-card">
+                    <i class="fas fa-globe-americas"></i>
+                    <h3>Hospedagem de Sites</h3>
+                    <p>Hospedagem de sites é o serviço que permite que indivíduos e organizações tornem seus sites acessíveis via a World Wide Web.</p>
+                </div>
+                <div class="sobre-card">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>HTTP, HTTPS e TCP/IP</h3>
+                    <p>HTTP é o protocolo de transferência de hipertexto, HTTPS é a versão segura, e TCP/IP é o conjunto de protocolos que permite a comunicação na internet.</p>
+                </div>
+                <div class="sobre-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hyper-V</h3>
+                    <p>Hyper-V é a tecnologia de virtualização da Microsoft que permite criar e gerenciar máquinas virtuais no Windows Server.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="infraestrutura" class="section infraestrutura-section">
+        <div class="container">
+            <h2 class="section-title">Infraestrutura</h2>
+            <div class="infra-grid">
+                <div class="infra-card">
+                    <div class="infra-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Máquina Virtual</h3>
+                    <p>Windows Server 2019/2022</p>
+                </div>
+                <div class="infra-card">
+                    <div class="infra-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Configuração do IIS</h3>
+                    <p>Serviços de Internet</p>
+                </div>
+                <div class="infra-card">
+                    <div class="infra-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Estrutura de Rede</h3>
+                    <p>Topologia de Rede</p>
+                </div>
+                <div class="infra-card">
+                    <div class="infra-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>DNS e IP</h3>
+                    <p>Configuração de Domínio</p>
+                </div>
+                <div class="infra-card">
+                    <div class="infra-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p>MySQL Server</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Passo 1</h4>
+                        <p>Criação da Máquina Virtual no Hyper-V</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Passo 2</h4>
+                        <p>Instalação do Windows Server</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Passo 3</h4>
+                        <p>Configuração do IIS</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Passo 4</h4>
+                        <p>Configuração de Rede e DNS</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h4>Passo 5</h4>
+                        <p>Deploy do Site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="section tecnologias-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologias Utilizadas</h2>
+            <div class="tecnologias-grid">
+                <div class="tecnologia-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fab fa-windows"></i>
+                    <h3>Windows Server</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fas fa-server"></i>
+                    <h3>IIS</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Hyper-V</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+                <div class="tecnologia-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section galeria-section">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <div class="galeria-grid">
+                <div class="galeria-card">
+                    <div class="galeria-placeholder">
+                        <i class="fas fa-laptop-code"></i>
+                        <p>Hyper-V</p>
+                    </div>
+                    <h3>Hyper-V Manager</h3>
+                </div>
+                <div class="galeria-card">
+                    <div class="galeria-placeholder">
+                        <i class="fab fa-windows"></i>
+                        <p>Windows Server</p>
+                    </div>
+                    <h3>Windows Server</h3>
+                </div>
+                <div class="galeria-card">
+                    <div class="galeria-placeholder">
+                        <i class="fas fa-server"></i>
+                        <p>IIS Manager</p>
+                    </div>
+                    <h3>Configuração do IIS</h3>
+                </div>
+                <div class="galeria-card">
+                    <div class="galeria-placeholder">
+                        <i class="fas fa-globe"></i>
+                        <p>Site no Navegador</p>
+                    </div>
+                    <h3>Site Funcionando</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contato-container">
+                <form class="contato-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+                <div class="contato-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contato@projetoservidor.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Laboratório de Informática</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Disciplina</h4>
+                            <p>Server and Data Center Administration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-server"></i>
+                    <span>ServidorWEB</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#infraestrutura">Infraestrutura</a>
+                    <a href="#tecnologias">Tecnologias</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Criando um Servidor WEB para Hospedagem. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
